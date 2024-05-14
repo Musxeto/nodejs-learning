@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   // Set the response header using res.setHeader
   res.setHeader("Content-Type", "text/html");
 
-  let path = "./views";
+  let path = "./views/";
   switch (req.url) {
     case "/":
       path += "index.html";
@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
       break;
   }
 
-  fs.readFile("./views/index.html", (err, data) => {
+  fs.readFile(path, (err, data) => {
     if (err) {
       console.error(err);
       res.end();
