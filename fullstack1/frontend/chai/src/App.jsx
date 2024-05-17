@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <h1>Chai Full Stack</h1>
-      <p>Chai: {chai.length}</p>
+      <p>Chai : {chai.length}</p>
 
       {chai.map((tea, index) => (
         <div key={tea.id}>
