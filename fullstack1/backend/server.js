@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/chai", (req, res) => {
-  chai = [
+  const chai = [
     {
       id: 1,
       title: "Strong Chai",
@@ -65,6 +65,7 @@ app.get("/chai", (req, res) => {
       content: "Cooling tea infused with mint leaves",
     },
   ];
+  res.send(chai);
 });
 const port = process.env.PORT || 3000;
 
