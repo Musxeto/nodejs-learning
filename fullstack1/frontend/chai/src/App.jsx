@@ -21,13 +21,12 @@ function App() {
       <h1>Chai Full Stack</h1>
       <p>Chai: {chai.length}</p>
 
-      {chai &&
-        chai.map((tea, index) => {
-          <div key={chai.id}>
-            <h3>{chai.id}</h3>
-            <p>{chai.content}</p>
-          </div>;
-        })}
+      {chai.map((tea, index) => (
+        <div key={tea.id}>
+          <h3>{tea.title}</h3>
+          <p>{tea.content}</p>
+        </div>
+      ))}
     </>
   );
 }
