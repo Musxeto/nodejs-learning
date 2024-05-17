@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.send("Server is ready");
 });
 
-app.get("/chai", (req, res) => {
+app.get("/api/chai", (req, res) => {
   const chai = [
     {
       id: 1,
